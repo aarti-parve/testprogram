@@ -56,11 +56,8 @@ button {
     font-size: 20px;
 }
 
-span {
-    padding-top: 10px;
-}
-
 img {
+    margin-top:10px;
     width: 800px;
     height: 400px;
 }
