@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greatest of Three Number</title>
+</head>
+
+<body>
+    <h3>Write a program in JavaScript to find greatest of three number.</h3>
+    <script>
+        var first_no = prompt("Enter first number");
+        var second_no = prompt("Enter second number");
+        var third_no = prompt("Enter third number");
+
+        a = parseInt(first_no);
+        b = parseInt(second_no);
+        c = parseInt(third_no);
+
+        console.log("First no is- " + a);
+        console.log("Second no is- " + b);
+        console.log("Third no is- " + c);
+
+        if (a > b && a > c) {
+            console.log(a + " is greater");
+        } else if (b > a && b > c) {
+            console.log(b + " is greater");
+        } else {
+            console.log(c + " is greater");
+        }
+    </script>
+</body>
+
+</html>

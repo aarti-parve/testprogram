@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial of a Number</title>
+</head>
+
+<body>
+    <h2>Write a program in JavaScript to print factorial of a number</h2>
+    <script>
+        var number = prompt("Enter a number");
+        n = parseInt(number);
+        console.log("Your entered number is " + n)
+        fact = factorial(n)
+
+        function factorial(n) {
+            let fact = 1;
+            if (n == 0 || n == 1) {
+                console.log(fact);
+            } else {
+                for (var i = n; i >= 1; i--) {
+                    fact = fact * i;
+                }
+                console.log("Factorial of " + n + " is " + fact);
+            }
+        }
+    </script>
+</body>
+
+</html>
