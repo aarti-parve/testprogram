@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test of 19-DECEMBER</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+        
+        .circle {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Moving object using arrow keys</h2>
+
+    <img class="circle" src="https://cdn.pixabay.com/photo/2013/07/13/10/51/football-157930__480.png">
+
+    <script>
+        let circle = document.querySelector('.circle');
+        let moveBy = 20;
+
+        window.addEventListener('load', () => {
+            circle.style.position = 'relative';
+            circle.style.left = 0;
+            circle.style.top = 0;
+        });
+
+
+        window.addEventListener('keyup', (e) => {
+            switch (e.key) {
+                case 'ArrowLeft':
+                    circle.style.left = parseInt(circle.style.left) - moveBy + 'px';
+                    break;
+                case 'ArrowRight':
+                    circle.style.left = parseInt(circle.style.left) + moveBy + 'px';
+                    break;
+                case 'ArrowUp':
+                    circle.style.top = parseInt(circle.style.top) - moveBy + 'px';
+                    break;
+                case 'ArrowDown':
+                    circle.style.top = parseInt(circle.style.top) + moveBy + 'px';
+                    break;
+            }
+        });
+    </script>
+</body>
+
+</html>
